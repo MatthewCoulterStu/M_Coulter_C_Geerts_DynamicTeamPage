@@ -1,2 +1,62 @@
 @charset "UTF-8";
 
+.hidden {
+	display: none;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	background-color: #EAEAE4;
+	margin-left: 20%;
+	width: 70%;
+	margin-top: 10%;
+}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.accent {
+	color: #BC5E5E;
+	font-family: 'Righteous', cursive;
+}
+
+#icon {
+	border-radius: 50%;
+	margin: 25px;
+}
+
+#profile p {
+	font-size: 24px;
+	text-align: center;
+}
+
+#body {
+	margin-top: 60px;
+}
+
+#firstLine {
+	margin-bottom: 34px;
+	font-size: 28px;
+}
+
+#bodyText {
+	font-size: 20px;
+	margin-right: 80px;
+	margin-bottom: 20px;
+}
+
+#socialLinks {
+	align-self: flex-end;
+	margin-bottom: 20px;
+}
+
+#switchIcon {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-right: 20px;
+}
