@@ -5,12 +5,45 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- Use if IE 9
-	<script src="js/html5shiv.js"></script>
-	-->
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-	
-<script src="js/main.js"></script>
+	<h1 class="hidden"> Dynamic Team Bios</h1>
+	<div id="container">
+		<div id="profile">
+			<h2 class="hidden"> Profile </h2>
+			<img id="icon" src="images/mattIcon.jpg">
+			<p id="bioName">Matthew Coulter</p>
+			<p  id="bioRole" class="accent">Developer</p>
+		</div>
+
+		<div id="body">
+			<h2 class="hidden">Body</h2>
+			<p class="accent" id="firstLine">I’m Matt Coulter, the programmer here.</p>
+			<p id="bodyText">I am proficient in CSS and am learning Javascript and Python. While I am more skilled in the design side of the field, I am pushing myself to improve my coding skills so that I can be a full stack developer and work on the many independent projects I want to pursue!</p>
+		</div>
+
+		
+
+		<div id="socialLinks">
+			<img id="switchIcon" src="images/carterIcon.png" onclick="bioSwitch()">
+			<a href="https://github.com/"><img src="images/githubLogo.png"></a>
+			<a href="https://twitter.com/"><img src="images/twitterLogo.png"></a>
+			<a href="https://gmail.com/"><img src="images/emailLogo.png"></a>
+			</div>
+
+		
+	</div>
+<script>
+	function bioSwitch() {
+  document.getElementById("bioName").innerHTML = "Carter Geerts";
+  document.getElementById("bioRole").innerHTML = "Designer";
+  document.getElementById("firstLine").innerHTML = "Wassup, I’m Carter G, the designer of this masterpiece.";
+  document.getElementById("bodyText").innerHTML = "Becoming a full-time online media designer is my dream. I’ve worked with many different programs and tools to enhance videos and image design quality. Artistic capabilities on the internet are almost endless. Smart designs can be used to increase efficiency and enjoyment. They can quickly show your abilities and strengths I am working on expanding my YouTube channel and GitHub account as they make more great portfolios. I am working on enhancing my web design skills at Fanshawe to gain more opportunities online.";
+  document.getElementById('icon').src='images/carterIcon.png'
+  document.getElementById('switchIcon').src='images/mattIcon.jpg'
+
+}
+</script>
 </body>
 </html>
